@@ -1,0 +1,17 @@
+{
+  "include": ["src/**/*.ts"],
+  "compilerOptions": {
+     "baseUrl": "src",                  // Base directory for non-relative module name
+    "target": "es2020",                      // Use newer JS features
+    "module": "commonjs",                    // Node.js module system
+    "moduleResolution": "node",              // Resolve node_modules properly
+    "outDir": "out",                         // Output directory
+    "sourceMap": true,                       // For debugging
+    "skipLibCheck": true,
+    "types": ["@types/node", "@types/jest"], // Add Node.js types!
+    "declaration": true,
+    "esModuleInterop": true,                 // To allow `import fs from "fs"`
+    "forceConsistentCasingInFileNames": true
+  }
+}
+
